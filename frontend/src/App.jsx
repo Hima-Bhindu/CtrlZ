@@ -3,7 +3,8 @@ import axios from 'axios';
 import { Shield, Upload as UploadIcon, Clock, HardDrive, KeyRound, Download, Trash2, Check, AlertCircle, History as HistoryIcon, LogOut, User } from 'lucide-react';
 import './premium.css';
 
-const API_URL = 'http://127.0.0.1:8001';
+axios.defaults.headers.common['Bypass-Tunnel-Reminder'] = 'true';
+const API_URL = 'https://tidy-grapes-poke.loca.lt';
 
 function App() {
   const [user, setUser] = useState(null); // { username, secretKey }
