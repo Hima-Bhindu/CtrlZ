@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Shield, Upload as UploadIcon, Clock, HardDrive, KeyRound, Download, Trash2, Check, AlertCircle, History as HistoryIcon, LogOut, User } from 'lucide-react';
 import './premium.css';
 
-const API_URL = 'https://ctrlz-backend.onrender.com';
+const API_URL = window.location.port === '8001' ? '' : 'http://127.0.0.1:8001';
 
 function App() {
   const [user, setUser] = useState(null); // { username, secretKey }
