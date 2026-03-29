@@ -3,8 +3,7 @@ import axios from 'axios';
 import { Shield, Upload as UploadIcon, Clock, HardDrive, KeyRound, Download, Trash2, Check, AlertCircle, History as HistoryIcon, LogOut, User } from 'lucide-react';
 import './premium.css';
 
-axios.defaults.headers.common['Bypass-Tunnel-Reminder'] = 'true';
-const API_URL = 'https://tidy-grapes-poke.loca.lt';
+const API_URL = 'https://ctrlz-backend.onrender.com';
 
 function App() {
   const [user, setUser] = useState(null); // { username, secretKey }
